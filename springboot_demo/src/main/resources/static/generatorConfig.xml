@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry location="D:/.m2/repository/mysql/mysql-connector-java/5.1.44/mysql-connector-java-5.1.44.jar" />
+	<context id="context">
+		<commentGenerator>
+			<!-- 去除自动生成的注释 -->
+			<property name="suppressAllComments" value="false" />
+		</commentGenerator>
+		<jdbcConnection connectionURL="jdbc:mysql://127.0.0.1:3306/eng_exercise" driverClass="com.mysql.jdbc.Driver" password="jytc$123" userId="root" />
+		<javaModelGenerator targetPackage="com.cc_testj.demo.mybatis.model" targetProject="springboot_demo" />
+		<sqlMapGenerator targetPackage="com.cc_testj.demo.mybatis.sqlmapper" targetProject="springboot_demo" />
+		<javaClientGenerator targetPackage="com.cc_testj.demo.mybatis.dao" targetProject="springboot_demo" type="XMLMAPPER" />
+		<table schema="" domainObjectName="Words" tableName="eng_exercise_t_words"></table>
+	</context>
+</generatorConfiguration>
